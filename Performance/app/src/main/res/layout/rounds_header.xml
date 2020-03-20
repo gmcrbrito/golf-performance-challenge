@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoundsHeader"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_marginTop="8dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/roundsHeaderContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/headerDateTv"
+            android:layout_width="295dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/month_year"
+            android:textColor="#060c1a"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/roboto_medium"
+            android:gravity="center|start"/>
+
+        <TextView
+            android:id="@+id/headerCountTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:text="@string/title_rounds"
+            android:textColor="#707581"
+            android:textSize="12sp"
+            app:fontFamily="@font/roboto"
+            android:gravity="center|end"/>
+
+    </LinearLayout>
+
+</LinearLayout>

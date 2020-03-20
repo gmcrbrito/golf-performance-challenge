@@ -3,23 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/nav_performance">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.hole19golf.performance.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_performance"
+        android:name="com.hole19golf.performance.ui.ui.performance.PerformanceFragment"
+        android:label="@string/title_performance"
+        tools:layout="@layout/fragment_performance" />
 
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.hole19golf.performance.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.hole19golf.performance.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
 </navigation>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutPerformance"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/subLayoutPerfomance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/containerRounds"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/backgroundRounds"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/roundsImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_rounds" />
+
+                <TextView
+                    android:id="@+id/roundsTv"
+                    android:layout_width="290dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|start"
+                    android:text="@string/title_rounds"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/roboto_medium" />
+
+                <TextView
+                    android:id="@+id/roundsNumberTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
+                    android:text="@string/title_number_rounds"
+                    android:textColor="#707581"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/roboto" />
+
+                <ImageView
+                    android:id="@+id/goToImg"
+                    android:layout_width="14dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_goto" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/space1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F3F3F3" />
+
+        <LinearLayout
+            android:id="@+id/containerStatistics"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/statisticsTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center|start"
+                android:text="@string/title_statistics"
+                android:textColor="#707581"
+                android:textSize="16sp"
+                app:fontFamily="@font/roboto_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerOverallStatistics"
+            android:layout_width="match_parent"
+            android:layout_height="368dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/containerOverall"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/backgroundOverall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/overallImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_overall" />
+
+                    <TextView
+                        android:id="@+id/overallTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center|start"
+                        android:text="@string/title_overall"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        app:fontFamily="@font/roboto_medium" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerOverall1and2"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="horizontal">
+
+                <com.hole19golf.performance.ui.ui.performance.StatisticsView
+                    android:id="@+id/customStatistics1"
+                    android:layout_width="171dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginLeft="52dp">
+
+                    <include layout="@layout/view_statistics" />
+
+                </com.hole19golf.performance.ui.ui.performance.StatisticsView>
+
+                <com.hole19golf.performance.ui.ui.performance.StatisticsView
+                    android:id="@+id/customStatistics2"
+                    android:layout_width="171dp"
+                    android:layout_height="match_parent">
+
+                    <include layout="@layout/view_statistics" />
+
+                </com.hole19golf.performance.ui.ui.performance.StatisticsView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerOverall3and4"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="horizontal">
+
+                <com.hole19golf.performance.ui.ui.performance.StatisticsView
+                    android:id="@+id/customStatistics3"
+                    android:layout_width="171dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginLeft="52dp">
+
+                    <include layout="@layout/view_statistics" />
+
+                </com.hole19golf.performance.ui.ui.performance.StatisticsView>
+
+                <com.hole19golf.performance.ui.ui.performance.StatisticsView
+                    android:id="@+id/customStatistics4"
+                    android:layout_width="171dp"
+                    android:layout_height="match_parent">
+
+                    <include layout="@layout/view_statistics" />
+
+                </com.hole19golf.performance.ui.ui.performance.StatisticsView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerOverall5and6"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="horizontal">
+
+                <com.hole19golf.performance.ui.ui.performance.StatisticsView
+                    android:id="@+id/customStatistics5"
+                    android:layout_width="171dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginLeft="52dp">
+
+                    <include layout="@layout/view_statistics" />
+
+                </com.hole19golf.performance.ui.ui.performance.StatisticsView>
+
+                <com.hole19golf.performance.ui.ui.performance.StatisticsView
+                    android:id="@+id/customStatistics6"
+                    android:layout_width="171dp"
+                    android:layout_height="match_parent">
+
+                    <include layout="@layout/view_statistics" />
+
+                </com.hole19golf.performance.ui.ui.performance.StatisticsView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:visibility="visible" 
+        tools:visibility="gone"/>
+
+</FrameLayout>

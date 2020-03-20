@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRoundsList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".ui.ui.rounds.RoundsActivity">
+
+    <LinearLayout
+        android:id="@+id/roundInfoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/containerRoundScore"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/roundInfo"
+                android:layout_width="250dp"
+                android:layout_height="96dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/roundDateTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/round_date"
+                    android:textColor="#707581"
+                    android:textSize="10sp"
+                    app:fontFamily="@font/roboto" />
+
+                <TextView
+                    android:id="@+id/courseNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/course_name"
+                    android:textColor="#060c1a"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/roboto" />
+
+                <LinearLayout
+                    android:id="@+id/layoutHolesTags"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/holesNumberTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="11dp"
+                        android:paddingRight="16dp"
+                        android:text="@string/number_holes"
+                        android:textColor="#707581"
+                        android:textSize="10sp"
+                        app:fontFamily="@font/roboto" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/scoreInfo"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/scoreTv"
+                    android:layout_width="71dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|end"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:text="@string/score"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="42sp"
+                    app:fontFamily="@font/roboto_medium" />
+
+                <LinearLayout
+                    android:id="@+id/containerSubScore"
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subScoreTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rounded_corners"
+                        android:gravity="center"
+                        android:text="@string/subscore"
+                        android:textColor="#060c1a"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/roboto_medium" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/goToRoundImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginBottom="36dp"
+                    android:src="@drawable/ic_goto" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/space2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F3F3F3" />
+
+    </LinearLayout>
+
+</LinearLayout>

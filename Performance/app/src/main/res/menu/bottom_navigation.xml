@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_feed"
+        android:icon="@drawable/ic_feed"
+        android:title="@string/title_feed" />
+
+    <item
+        android:id="@+id/nav_performance"
+        android:icon="@drawable/ic_performance"
+        android:title="@string/title_performance" />
+
+    <item
+        android:id="@+id/nav_courses"
+        android:icon="@drawable/ic_courses"
+        android:title="@string/title_courses" />
+
+    <item
+        android:id="@+id/nav_me"
+        android:icon="@drawable/ic_me"
+        android:title="@string/title_me" />
+
+    <item
+        android:id="@+id/nav_more"
+        android:icon="@drawable/ic_more"
+        android:title="@string/title_more" />
+
+</menu>
